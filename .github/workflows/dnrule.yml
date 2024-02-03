@@ -9,6 +9,10 @@ jobs:
   dnrule:
     runs-on: ubuntu-latest
     steps:
+      - name: Print the length of GITHUB_TOKEN
+        run: echo "The length of GITHUB_TOKEN is ${#GITHUB_TOKEN} characters."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: dnrule
         uses: zxcv9203/dnRule@test1
         with:
