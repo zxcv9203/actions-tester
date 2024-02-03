@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: dnrule
         uses: zxcv9203/dnRule@test1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
