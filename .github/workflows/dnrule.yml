@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: dnrule
-        uses: zxcv9203/dnRule@test1
+        uses: zxcv9203/dnRule@test
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-repository: ${{ secrets.GITHUB_REPOSITORY }}
