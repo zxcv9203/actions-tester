@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: dnrule
-        uses: zxcv9203/dnRule@v.0.0.0
+        uses: zxcv9203/dnRule
