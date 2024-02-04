@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
-
+permissions:
+  issues: write
 jobs:
   dnrule:
     runs-on: ubuntu-latest
