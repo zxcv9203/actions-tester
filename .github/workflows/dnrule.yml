@@ -2,7 +2,7 @@ name: dnrule Test
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 15 * * *'
 permissions:
   issues: write
   pull-requests: write
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: dnrule
-        uses: zxcv9203/dnRule@v1.0.0
+        uses: zxcv9203/dnRule@v1.0.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           github-repository: ${{ github.repository }}
