@@ -1,8 +1,6 @@
 name: dnrule Test
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 15 * * *'
 permissions:
   issues: write
   pull-requests: write
